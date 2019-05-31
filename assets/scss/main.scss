@@ -1,3 +1,116 @@
 body {
-    background-color: orange;
+    font-family: 'Poppins', sans-serif !important;
+    margin: 0;
+    padding: 0;
+
+    header {
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        .top-icons {
+            font-size: 2rem;
+        }
+
+        .text-uppercase {
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.8rem;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        i {
+            color: #df7322;
+        }
+
+        .sub-textinfo-top {
+            color: #b6b6b6;
+            font-size: 0.8rem;
+        }
+
+        .top-contact {
+            width: 50%;
+        }
+
+        .top-icons-border {
+            width: 60px;
+            height: 60px;
+            border: 1px solid #e1e1e1;
+            margin-right: 15px;
+        }
+
+        .top-line {
+            width: 100vw;
+            height: 5vh;
+            background-color: #df7322;
+        }
+
+        .top-social {
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .top-container {
+            height: 5vh;
+
+            a:hover {
+                text-decoration: none;
+            }
+
+            div {
+                height: 5vh;
+
+                .div-social-fb {
+                    width: 50px;
+                    border-right: solid 0.5px white;
+                    border-left: solid 2px white;
+                    transition: 0.5s;
+
+                    &:hover {
+                        background-color: white;
+                        transition: 0.5s;
+                    }
+                }
+
+                .div-social-twt {
+                    width: 50px;
+                    border-right: solid 0.5px white;
+                    border-left: solid 0.5px white;
+                    transition: 0.5s;
+
+                    &:hover {
+                        background-color: white;
+                        transition: 0.5s;
+                    }
+                }
+
+                .div-social-ytb {
+                    width: 50px;
+                    border-right: solid 2px white;
+                    border-left: solid 0.5px white;
+                    transition: 0.5s;
+
+                    &:hover {
+                        background-color: white;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+
+        nav {
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    list-style: none;
+                }
+            }
+        }
+    }
 }

@@ -1,20 +1,83 @@
-{% extends 'base.html.twig' %}
+<!DOCTYPE html>
+<html lang="fr">
 
-{% block title %}Hello FrontController!{% endblock %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway:400,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+    <title>Entraide Sociale</title>
+</head>
 
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="top-line">
+                <div class="container top-container">
+                    <div class="d-flex">
+                        <a href="#">
+                            <div class="div-social-fb d-flex align-items-center justify-content-center"><i
+                                    class="fab fa-facebook-f top-social"></i></div></i>
+                        </a>
+                        <a href="#" class="twitter">
+                            <div class="div-social-twt d-flex align-items-center justify-content-center"><i
+                                    class="fab fa-twitter top-social"></i></div>
+                        </a>
+                        <a href="#">
+                            <div class="div-social-ytb d-flex align-items-center justify-content-center"><i
+                                    class="fab fa-youtube top-social"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <div>
+                        <img src="{{ asset('build/static/logo.webp')}}" alt="logo de l'association">
+                    </div>
+                    <div class="d-flex justify-content-between top-contact">
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center justify-content-center top-icons-border">
+                                <i class="far fa-envelope top-icons"></i>
+                            </div>
+                            <div>
+                                <p class="text-uppercase font-weight-bold">Email</p>
+                                <p class="sub-textinfo-top">entraide.sociale1@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center justify-content-center top-icons-border">
+                                <i class="fas fa-mobile top-icons"></i>
+                            </div>
+                            <div>
+                                <p class="text-uppercase font-weight-bold">Téléphone</p>
+                                <p class="sub-textinfo-top">06-95-01-88-43</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="d-flex justify-content-between">
+                    <ul class="d-flex">
+                        <li><a href="">Accueil</a></li>
+                        <li><a href="">À propos</a></li>
+                        <li><a href="">Actualités</a></li>
+                        <li><a href="">Nos missions</a></li>
+                        <li><a href="">Témoignages</a></li>
+                        <li><a href="">Galerie</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                    <a href="">Faire un don</a>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+</body>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/var/www/html/src/Controller/FrontController.php'|file_link(0) }}">src/Controller/FrontController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/var/www/html/templates/front/index.html.twig'|file_link(0) }}">templates/front/index.html.twig</a></code></li>
-    </ul>
-</div>
-{% endblock %}
+
+<script src="{{ asset('build/app.js') }}"></script>
+
+</html>
