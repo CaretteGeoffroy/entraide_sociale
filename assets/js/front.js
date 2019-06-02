@@ -36,6 +36,23 @@ topDivYtb.addEventListener('mouseleave', () =>{
     iconeYtb.style.color = 'white';
 })
 
+window.onscroll = function() {myFunction()};
+
+const navbar = document.querySelector('.background-nav');
+const intro = document.querySelector('.intro-layer');
+let sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add('sticky');
+    intro.style.marginTop = '10vh';
+  } else {
+    navbar.classList.remove('sticky');
+    intro.style.marginTop = '0';
+
+  }
+}
+
 function removeLoader() {
     loader.parentNode.removeChild(loader);
 }
