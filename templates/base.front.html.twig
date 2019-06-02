@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway:400,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+    <title>Entraide Sociale</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="top-line">
+                <div class="container top-container">
+                    <div class="d-flex">
+                        <a href="#">
+                            <div class="div-social-fb d-flex align-items-center justify-content-center"><i
+                                    class="fab fa-facebook-f top-social"></i></div></i>
+                        </a>
+                        <a href="#" class="twitter">
+                            <div class="div-social-twt d-flex align-items-center justify-content-center"><i
+                                    class="fab fa-twitter top-social"></i></div>
+                        </a>
+                        <a href="#">
+                            <div class="div-social-ytb d-flex align-items-center justify-content-center"><i
+                                    class="fab fa-youtube top-social"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <div>
+                        <img src="{{ asset('build/static/logo.webp')}}" alt="logo de l'association">
+                    </div>
+                    <div class="d-flex justify-content-between top-contact">
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center justify-content-center top-icons-border">
+                                <i class="far fa-envelope top-icons"></i>
+                            </div>
+                            <div>
+                                <p class="text-uppercase font-weight-bold">Email</p>
+                                <p class="sub-textinfo-top">entraide.sociale1@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center justify-content-center top-icons-border">
+                                <i class="fas fa-mobile top-icons"></i>
+                            </div>
+                            <div>
+                                <p class="text-uppercase font-weight-bold">Téléphone</p>
+                                <p class="sub-textinfo-top">06-95-01-88-43</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="background-nav mt-2">
+                <nav class="d-flex justify-content-between align-items-center container">
+                    <ul class="d-flex">
+                        <li><a href="/" class="text-uppercase">Accueil</a></li>
+                        <li><a href="" class="text-uppercase">À propos</a></li>
+                        <li><a href="" class="text-uppercase">Actualités</a></li>
+                        <li><a href="" class="text-uppercase">Nos missions</a></li>
+                        <li><a href="" class="text-uppercase">Témoignages</a></li>
+                        <li><a href="" class="text-uppercase">Galerie</a></li>
+                        <li><a href="" class="text-uppercase">Contact</a></li>
+                    </ul>
+                    <a class="donate d-flex align-items-center text-uppercase" href="{{ path('donate')}}">Faire un don</a>
+                </nav>
+            </div>
+            <div class="header-underline"></div>
+        </div>
+    </header>
+
+    {% block body %}{% endblock %}
+
+
+    <div class="loader d-flex align-items-center justify-content-center">
+        <img src="{{ asset('build/static/loader.svg')}}" alt="loader">
+    </div>$
+</body>
+
+
+<script src="{{ asset('build/app.js') }}"></script>
+
+</html>

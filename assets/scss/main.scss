@@ -3,7 +3,21 @@ body {
     margin: 0;
     padding: 0;
 
+    .loader {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        background: white;
+        top: 0;
+        z-index: 9999;
+    }
+
     header {
+
+        .header-underline {
+            height: 5px;
+            background-color: #df7322;
+        }
 
         .container-fluid {
             padding: 0;
@@ -43,7 +57,6 @@ body {
         }
 
         .top-line {
-            width: 100vw;
             height: 5vh;
             background-color: #df7322;
         }
@@ -101,7 +114,71 @@ body {
             }
         }
 
+        .background-nav {
+            background-color: #262F36;
+            height: 10vh;
+        }
+
         nav {
+
+            height: 10vh;
+
+            .donate {
+                height: 10vh;
+                z-index: 1;
+                position: relative;
+                font-size: inherit;
+                font-family: inherit;
+                color: white;
+                padding: 0.5em 1em;
+                outline: none;
+                border: solid 2px #df7322;
+                border-bottom: none;
+                background-color: #df7322;
+                overflow: hidden;
+                transition: color 0.4s ease-in-out;
+                font-weight: bold;
+                font-family: 'Raleway', sans-serif;
+              }
+              
+              .donate::before {
+                content: '';
+                z-index: -1;
+                position: absolute;
+                top: 100%;
+                right: 100%;
+                width: 1em;
+                height: 1em;
+                border-radius: 50%;
+                background-color: white;
+                transform-origin: center;
+                transform: translate(50%, -50%) scale(0);
+                transition: transform 0.45s ease-in-out;
+              }
+              
+              .donate:hover {
+                cursor: pointer;
+                color: #df7322;
+                text-decoration: none;
+              }
+              
+              .donate:hover::before {
+                transform: translate(50%, -50%) scale(25);
+              }
+
+            .donate-link {
+
+                &:hover {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+
+            a {
+                color: white;
+                font-weight: bold;
+                font-family: 'Raleway', sans-serif;
+            }
 
             ul {
                 margin: 0;
@@ -109,7 +186,47 @@ body {
 
                 li {
                     list-style: none;
+                    margin-right: 40px;
+
+                    a {
+
+                        transition: 0.5s;
+
+                        &:hover {
+                            text-decoration: none;
+                            color: #df7322;
+                            transition: 0.5s;
+                        }
+                    }
                 }
+            }
+        }
+    }
+
+    main {
+
+        .introduction {
+            background: url(../../public/build/static/achievement.jpg);
+            background-size: cover;
+            height: 70vh;
+        }
+
+        .intro-layer {
+            background: #df74226b;
+            height: 70vh;
+
+            p {
+                color: white;
+                font-size: 1.5rem;
+            }
+
+            .mandela {
+                font-weight: bold;
+                font-family: 'Raleway', sans-serif;
+            }
+
+            .quotes{
+                color: white !important;
             }
         }
     }
